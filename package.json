@@ -1,0 +1,12 @@
+{
+  "name": "octofit-tracker-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"npm --prefix octofit-tracker/backend run dev\" \"npm --prefix octofit-tracker/frontend run dev -- --host 0.0.0.0\"",
+    "dev:backend": "npm --prefix octofit-tracker/backend run dev",
+    "dev:frontend": "npm --prefix octofit-tracker/frontend run dev -- --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
