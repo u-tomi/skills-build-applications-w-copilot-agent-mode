@@ -25,6 +25,7 @@ const createResourceRouter = <T>(model: Model<T>) => {
   return router;
 };
 
+
 export const userRoutes = createResourceRouter(User);
 export const teamRoutes = createResourceRouter(Team);
 export const activityRoutes = createResourceRouter(Activity);
